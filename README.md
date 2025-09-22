@@ -14,7 +14,7 @@ I performed a TCP SYN port scan on my local network to identify open services an
   - tshark -r scan.pcapng -Y "tcp.flags.syn==1 && tcp.flags.ack==0" -w syn.pcapng
 
 ## Findings (example)
-- Host 192.168.1.10 — open ports: 53(tcp)
+- Host 192.168.xx.xxx — open ports: 53(tcp)
 - Several ports returned RST (closed). Some probes got no reply (filtered).
 
 ## Files included
